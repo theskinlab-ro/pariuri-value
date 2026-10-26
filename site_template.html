@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pariuri Value — Top 10 meciuri</title>
+<style>
+  :root { --bg:#0f1115; --card:#171a21; --line:#262b36; --txt:#e8eaf0; --mut:#9aa3b2; --ok:#2ecc71; --bad:#e74c3c; --acc:#5b9dff; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--txt); font-family:'Segoe UI',system-ui,sans-serif; padding:16px; max-width:860px; margin:0 auto; }
+  header h1 { font-size:22px; font-weight:600; }
+  header .sub { color:var(--mut); font-size:13px; margin-top:4px; }
+  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--mut); margin:12px 0 18px; }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:5px; }
+  .match { background:var(--card); border:1px solid var(--line); border-radius:12px; margin-bottom:16px; overflow:hidden; }
+  .mhead { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid var(--line); flex-wrap:wrap; gap:6px; }
+  .mhead .teams { font-size:16px; font-weight:600; }
+  .mhead .info { font-size:12px; color:var(--mut); }
+  .sug { padding:12px 16px; border-bottom:1px solid var(--line); background:rgba(91,157,255,.05); }
+  .sug .stitle { font-size:12px; color:var(--acc); text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px; }
+  .srow { display:grid; grid-template-columns:1fr 52px 70px 86px 92px; gap:8px; align-items:center; padding:5px 0; font-size:14px; }
+  .srow .p { text-align:right; font-variant-numeric:tabular-nums; }
+  .srow .fair { text-align:right; color:var(--mut); font-size:12px; font-variant-numeric:tabular-nums; }
+  .srow input { width:100%; padding:5px 8px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--txt); font-size:13px; }
+  .srow input:focus { outline:none; border-color:var(--acc); }
+  .verdict { font-size:12px; text-align:right; font-variant-numeric:tabular-nums; }
+  .verdict.play { color:var(--ok); } .verdict.no { color:var(--bad); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0; }
+  .col { padding:10px 16px; border-bottom:1px solid var(--line); }
+  .col h3 { font-size:12px; color:var(--mut); font-weight:600; margin-bottom:6px; }
+  .lrow { display:flex; justify-content:space-between; font-size:13px; padding:2px 0; font-variant-numeric:tabular-nums; }
+  .lrow .fair { color:var(--mut); }
+  .goals { padding:10px 16px; font-size:13px; color:var(--mut); font-variant-numeric:tabular-nums; }
+  .goals b { color:var(--txt); font-weight:600; }
+  .combo-line { color:var(--acc); }
+  footer { font-size:11px; color:var(--mut); margin-top:8px; line-height:1.6; }
+  @media(max-width:560px){ .srow{grid-template-columns:1fr 46px 60px 74px 80px; font-size:13px;} }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚽ Pariuri Value — top 10 meciuri</h1>
+  <div class="sub" id="sub"></div>
+</header>
+<div class="legend">
+  <span><span class="dot" style="background:var(--ok)"></span>joacă (EV pozitiv, cotă peste minim)</span>
+  <span><span class="dot" style="background:var(--bad)"></span>evită (cotă sub prag)</span>
+  <span><span class="dot" style="background:var(--acc)"></span>probabilitate model · cotă corectă = 1/probabilitate</span>
+</div>
+<div id="list"></div>
+<footer>
+  Model statistic pe ~4 sezoane de campionat (Poisson + corelații faulturi–cartonașe). Sugestiile nu includ meciuri de cupă/UCL.
+  „Joacă doar dacă" = pragul minim de cotă pentru value real. Nimic nu e garantat — pariază doar ce îți permiți să pierzi.
+</footer>
+<script>
+var D = /*__DATA__*/null/*__END__*/;
+(function(){
+  if(!D){ document.getElementById('list').innerHTML='<p style="color:var(--mut)">Fără date.</p>'; return; }
+  document.getElementById('sub').textContent = D.date + ' · ' + D.matches.length + ' meciuri din ' + D.count + ' analizate · generat ' + D.generated;
+  var L = document.getElementById('list');
+  var pct = function(p){ return (p*100).toFixed(1)+'%'; };
+  var fair = function(p){ return p>0.001 ? (1/p).toFixed(2) : '—'; };
+  D.matches.forEach(function(m, mi){
+    var card = document.createElement('div'); card.className='match';
+    var h = '<div class="mhead"><span class="teams">'+m.home+' – '+m.away+'</span>' +
+            '<span class="info">'+m.liga+' · '+m.time+'</span></div>';
+    if(m.sugestii.length){
+      h += '<div class="sug"><div class="stitle">Sugestii model</div>';
+      m.sugestii.forEach(function(s, si){
+        h += '<div class="srow"><span>'+s.tip+'</span><span class="p">'+pct(s.p)+'</span>' +
+             '<span class="fair" title="cotă corectă">'+s.fair+'</span>' +
+             '<input id="in-'+mi+'-'+si+'" inputmode="decimal" placeholder="cota ta" aria-label="cota Superbet">' +
+             '<span class="verdict" id="v-'+mi+'-'+si+'"></span></div>' +
+             '<div style="font-size:11px;color:var(--mut);padding-left:0">joacă doar dacă Superbet dă minim <b style="color:var(--txt)">'+s.min+'</b> · edge: '+s.edge+'</div>';
+      });
+      h += '</div>';
+    }
+    h += '<div class="grid">';
+    [['faulturi','Faulturi'],['cornere','Cornere'],['galbene','Cartonașe']].forEach(function(pair){
+      h += '<div class="col"><h3>'+pair[1]+' (peste)</h3>';
+      m.stats[pair[0]].forEach(function(d){
+        h += '<div class="lrow"><span>'+d.line+'</span><span>'+pct(d.p)+' · <span class="fair">'+fair(d.p)+'</span></span></div>';
+      });
+      h += '</div>';
+    });
+    h += '</div>';
+    h += '<div class="goals">Combos: ' + m.combos.map(function(c){
+      return '<span class="combo-line">'+c.lf+'+fault & '+c.lc+'+cart: '+pct(c.p)+' ('+fair(c.p)+')</span>';
+    }).join(' · ') + '</div>';
+    h += '<div class="goals">Goluri: 1 <b>'+pct(m.goals.p1)+'</b> · X <b>'+pct(m.goals.px)+'</b> · 2 <b>'+pct(m.goals.p2)+'</b> · peste 2.5: <b>'+pct(m.goals.po25)+'</b> <span style="color:var(--bad)">(doar informație — modelul nu are edge aici)</span></div>';
+    card.innerHTML = h;
+    L.appendChild(card);
+    m.sugestii.forEach(function(s, si){
+      var inp = document.getElementById('in-'+mi+'-'+si), v = document.getElementById('v-'+mi+'-'+si);
+      inp.addEventListener('input', function(){
+        var o = parseFloat(this.value.replace(',','.'));
+        if(!o || o<=1){ v.textContent=''; v.className='verdict'; return; }
+        var e = s.p*o-1;
+        v.textContent = (e>=0?'+':'')+(e*100).toFixed(1)+'%';
+        v.className = 'verdict ' + (o>=s.min ? 'play' : 'no');
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
