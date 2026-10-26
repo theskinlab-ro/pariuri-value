@@ -1,0 +1,27 @@
+name: analiza-zilnica
+on:
+  schedule:
+    - cron: '23 7 * * *'   # 07:23 UTC zilnic
+  workflow_dispatch:        # si manual din tab-ul Actions
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - name: Genereaza site-ul
+        run: python gen_site.py
+      - name: Publica modificarile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/index.html
+          git commit -m "analiza $(date +%F)" || exit 0
+          git push
