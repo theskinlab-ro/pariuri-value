@@ -375,12 +375,12 @@ def main():
             print(f'  [{m["lg"]}] {m["home"]}-{m["away"]}: maxEV={m["maxev"]*100:.1f}% -> {v}')
     gen_at = datetime.datetime.now().strftime("%d.%m.%Y %H:%M")
     html = render_html(results, date_s, gen_at)
-    out = "site/index.html"
+    out = "index.html"  # radacina repo-ului — asa servește GitHub Pages
     with open(out, "w", encoding="utf-8") as fh:
         fh.write(html)
     print("scris:", out)
     if do_push:
-        subprocess.run(["git", "add", "site/index.html"], cwd=".", check=False)
+        subprocess.run(["git", "add", "index.html"], cwd=".", check=False)
         subprocess.run(["git", "commit", "-m", f"update {date_s}"], cwd=".", check=False)
         r = subprocess.run(["git", "push"], cwd=".", capture_output=True, text=True)
         print("push:", "OK" if r.returncode == 0 else r.stderr[-300:])
