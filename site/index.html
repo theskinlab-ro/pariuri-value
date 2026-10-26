@@ -5,103 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pariuri Value — Top 10 meciuri</title>
 <style>
-  :root { --bg:#0f1115; --card:#171a21; --line:#262b36; --txt:#e8eaf0; --mut:#9aa3b2; --ok:#2ecc71; --bad:#e74c3c; --acc:#5b9dff; }
+  :root { --bg:#0f1115; --card:#171a21; --line:#262b36; --txt:#e8eaf0; --mut:#9aa3b2; --ok:#2ecc71; --bad:#e74c3c; --warn:#f1c40f; --acc:#5b9dff; }
   * { box-sizing:border-box; margin:0; padding:0; }
-  body { background:var(--bg); color:var(--txt); font-family:'Segoe UI',system-ui,sans-serif; padding:16px; max-width:860px; margin:0 auto; }
+  body { background:var(--bg); color:var(--txt); font-family:'Segoe UI',system-ui,sans-serif; padding:16px; max-width:980px; margin:0 auto; }
   header h1 { font-size:22px; font-weight:600; }
   header .sub { color:var(--mut); font-size:13px; margin-top:4px; }
-  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--mut); margin:12px 0 18px; }
-  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:5px; }
-  .match { background:var(--card); border:1px solid var(--line); border-radius:12px; margin-bottom:16px; overflow:hidden; }
-  .mhead { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid var(--line); flex-wrap:wrap; gap:6px; }
-  .mhead .teams { font-size:16px; font-weight:600; }
-  .mhead .info { font-size:12px; color:var(--mut); }
-  .sug { padding:12px 16px; border-bottom:1px solid var(--line); background:rgba(91,157,255,.05); }
-  .sug .stitle { font-size:12px; color:var(--acc); text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px; }
-  .srow { display:grid; grid-template-columns:1fr 52px 70px 86px 92px; gap:8px; align-items:center; padding:5px 0; font-size:14px; }
-  .srow .p { text-align:right; font-variant-numeric:tabular-nums; }
-  .srow .fair { text-align:right; color:var(--mut); font-size:12px; font-variant-numeric:tabular-nums; }
-  .srow input { width:100%; padding:5px 8px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--txt); font-size:13px; }
-  .srow input:focus { outline:none; border-color:var(--acc); }
-  .verdict { font-size:12px; text-align:right; font-variant-numeric:tabular-nums; }
-  .verdict.play { color:var(--ok); } .verdict.no { color:var(--bad); }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0; }
-  .col { padding:10px 16px; border-bottom:1px solid var(--line); }
-  .col h3 { font-size:12px; color:var(--mut); font-weight:600; margin-bottom:6px; }
-  .lrow { display:flex; justify-content:space-between; font-size:13px; padding:2px 0; font-variant-numeric:tabular-nums; }
-  .lrow .fair { color:var(--mut); }
-  .goals { padding:10px 16px; font-size:13px; color:var(--mut); font-variant-numeric:tabular-nums; }
-  .goals b { color:var(--txt); font-weight:600; }
-  .combo-line { color:var(--acc); }
-  footer { font-size:11px; color:var(--mut); margin-top:8px; line-height:1.6; }
-  @media(max-width:560px){ .srow{grid-template-columns:1fr 46px 60px 74px 80px; font-size:13px;} }
+  .regula { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:14px 0; font-size:14px; line-height:1.55; }
+  .regula b { color:var(--ok); }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:14px; }
+  th, td { padding:10px 10px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:#1d212b; color:var(--mut); font-size:12px; text-transform:uppercase; letter-spacing:.4px; }
+  tr:last-child td { border-bottom:none; }
+  .meci { font-weight:600; white-space:nowrap; }
+  .liga { display:inline-block; margin-left:6px; font-size:11px; color:var(--mut); border:1px solid var(--line); border-radius:4px; padding:1px 5px; }
+  .sel { font-weight:600; }
+  .alt { font-weight:400; color:var(--mut); font-size:12px; margin-top:3px; }
+  .sb { font-weight:700; color:var(--acc); }
+  .vd { font-weight:700; white-space:nowrap; }
+  .vd.play { color:var(--ok); } .vd.small { color:var(--warn); } .vd.skip { color:var(--bad); }
+  .none { color:var(--mut); text-align:center; padding:24px; }
+  footer { color:var(--mut); font-size:12px; margin-top:14px; line-height:1.6; }
 </style>
 </head>
 <body>
 <header>
-  <h1>⚽ Pariuri Value — top 10 meciuri</h1>
-  <div class="sub" id="sub"></div>
+  <h1>📋 Pariuri Value — 2026-10-27</h1>
+  <div class="sub">Generat 26.10.2026 22:16 · model Poisson pe ultimele 4 sezoane · 10 meciuri din ligile acoperite</div>
 </header>
-<div class="legend">
-  <span><span class="dot" style="background:var(--ok)"></span>joacă (EV pozitiv, cotă peste minim)</span>
-  <span><span class="dot" style="background:var(--bad)"></span>evită (cotă sub prag)</span>
-  <span><span class="dot" style="background:var(--acc)"></span>probabilitate model · cotă corectă = 1/probabilitate</span>
+<div class="regula">
+  <b>Regula de citire (5 secunde):</b> coloana „COTA MEA" e cota corectă calculată din statistici.
+  Dacă <b>COTA SB e mai mare</b> → Superbet plătește peste merit → <b>joci</b>.
+  Dacă e mai mică → nu joci, chiar dacă ți se pare „sigur". Value-ul se prinde dimineața — cotele scad spre start.
 </div>
-<div id="list"></div>
+<table>
+  <thead><tr><th>Meci</th><th>Ce pariezi</th><th>Cota mea</th><th>Cota SB</th><th>Șansă</th><th>Verdict</th></tr></thead>
+  <tbody>
+<tr class="play"><td class="meci">Roma – Cagliari<span class="liga">I1</span></td><td class="sel">peste 22.5 faulturi</td><td>1.56</td><td class="sb">1.73</td><td>64%</td><td class="vd play">JOCI</td></tr>
+<tr class="play"><td class="meci">Sassuolo – Lazio<span class="liga">I1</span></td><td class="sel">peste 4.5 cartonașe<div class="alt">variantă: peste 3.5 cartonașe — cota mea 1.43, SB 1.61</div></td><td>1.94</td><td class="sb">2.22</td><td>52%</td><td class="vd play">JOCI</td></tr>
+<tr class="small"><td class="meci">Torino – Como<span class="liga">I1</span></td><td class="sel">peste 7.5 cornere<div class="alt">variantă: peste 8.5 cornere — cota mea 1.68, SB 1.80</div></td><td>1.39</td><td class="sb">1.50</td><td>72%</td><td class="vd small">miză mică</td></tr>
+<tr class="skip"><td class="meci">Ascoli – Sampdoria<span class="liga">I2</span></td><td class="sel">—</td><td>—</td><td class="sb">—</td><td>—</td><td class="vd skip">NU JOCI</td></tr>
+<tr class="skip"><td class="meci">Benevento – Catanzaro<span class="liga">I2</span></td><td class="sel">—</td><td>—</td><td class="sb">—</td><td>—</td><td class="vd skip">NU JOCI</td></tr>
+<tr class="small"><td class="meci">Cesena – Empoli<span class="liga">I2</span></td><td class="sel">peste 7.5 cornere<div class="alt">variantă: peste 8.5 cornere — cota mea 1.44, SB 1.52</div></td><td>1.25</td><td class="sb">1.32</td><td>80%</td><td class="vd small">miză mică</td></tr>
+<tr class="small"><td class="meci">Virtus Entella – Avellino<span class="liga">I2</span></td><td class="sel">peste 7.5 cornere</td><td>1.37</td><td class="sb">1.44</td><td>73%</td><td class="vd small">miză mică</td></tr>
+<tr class="play"><td class="meci">Vicenza – Modena<span class="liga">I2</span></td><td class="sel">peste 13.5 cornere<div class="alt">variantă: peste 12.5 cornere — cota mea 2.09, SB 3.65</div></td><td>2.71</td><td class="sb">4.75</td><td>37%</td><td class="vd play">JOCI</td></tr>
+<tr class="play"><td class="meci">Mantova – Cremonese<span class="liga">I2</span></td><td class="sel">peste 4.5 cartonașe<div class="alt">variantă: peste 5.5 cartonașe — cota mea 2.48, SB 3.00</div></td><td>1.73</td><td class="sb">2.12</td><td>58%</td><td class="vd play">JOCI</td></tr>
+<tr class="skip"><td class="meci">Padova – Sudtirol<span class="liga">I2</span></td><td class="sel">—</td><td>—</td><td class="sb">—</td><td>—</td><td class="vd skip">NU JOCI</td></tr>
+  </tbody>
+</table>
 <footer>
-  Model statistic pe ~4 sezoane de campionat (Poisson + corelații faulturi–cartonașe). Sugestiile nu includ meciuri de cupă/UCL.
-  „Joacă doar dacă" = pragul minim de cotă pentru value real. Nimic nu e garantat — pariază doar ce îți permiți să pierzi.
+  Piața „faulturi" e cea mai bine calibrată a modelului; „cornere" cea mai slabă — de aceea cornerele au doar miză mică.
+  Aici nu se joacă goluri: modelul a pierdut la backtest pe goluri. Fără meciuri de cupă (modelul e calibrat pe campionat).
 </footer>
-<script>
-var D = {"date": "26.10.2026", "generated": "26.10 11:52", "count": 10, "matches": [{"lg": "SP2", "liga": "La Liga 2", "home": "Andorra", "away": "Burgos", "time": "19:30", "stats": {"faulturi": [{"line": 19.5, "p": 0.9567}, {"line": 21.5, "p": 0.9025}, {"line": 23.5, "p": 0.8135}], "cornere": [{"line": 8.5, "p": 0.5412}, {"line": 9.5, "p": 0.4095}, {"line": 10.5, "p": 0.2912}], "galbene": [{"line": 3.5, "p": 0.7809}, {"line": 4.5, "p": 0.6188}, {"line": 5.5, "p": 0.4454}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.7747}, {"lf": 21.5, "lc": 4.5, "p": 0.6185}, {"lf": 23.5, "lc": 5.5, "p": 0.4507}], "goals": {"p1": 0.3761, "px": 0.2836, "p2": 0.3403, "po25": 0.4035}, "sugestii": [{"tip": "Peste 21.5 faulturi", "p": 0.9025, "fair": 1.11, "min": 1.14, "kind": "faulturi", "edge": "rată faulturi"}, {"tip": "Peste 3.5 cartonașe", "p": 0.7809, "fair": 1.28, "min": 1.32, "kind": "galbene", "edge": "severitate"}]}, {"lg": "P1", "liga": "Primeira Liga", "home": "Santa Clara", "away": "Benfica", "time": "18:45", "stats": {"faulturi": [{"line": 19.5, "p": 0.9643}, {"line": 21.5, "p": 0.9172}, {"line": 23.5, "p": 0.8371}], "cornere": [{"line": 8.5, "p": 0.5707}, {"line": 9.5, "p": 0.4392}, {"line": 10.5, "p": 0.3183}], "galbene": [{"line": 3.5, "p": 0.7944}, {"line": 4.5, "p": 0.6371}, {"line": 5.5, "p": 0.4652}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.7046}, {"lf": 21.5, "lc": 4.5, "p": 0.5318}, {"lf": 23.5, "lc": 5.5, "p": 0.3638}], "goals": {"p1": 0.2407, "px": 0.252, "p2": 0.5072, "po25": 0.4772}, "sugestii": [{"tip": "Peste 21.5 faulturi", "p": 0.9172, "fair": 1.09, "min": 1.12, "kind": "faulturi", "edge": "rată faulturi"}, {"tip": "Peste 3.5 cartonașe", "p": 0.7944, "fair": 1.26, "min": 1.3, "kind": "galbene", "edge": "severitate"}]}, {"lg": "SP1", "liga": "La Liga", "home": "Sevilla", "away": "Osasuna", "time": "20:00", "stats": {"faulturi": [{"line": 19.5, "p": 0.9237}, {"line": 21.5, "p": 0.8435}, {"line": 23.5, "p": 0.7256}], "cornere": [{"line": 8.5, "p": 0.4006}, {"line": 9.5, "p": 0.2773}, {"line": 10.5, "p": 0.1793}], "galbene": [{"line": 3.5, "p": 0.6885}, {"line": 4.5, "p": 0.5033}, {"line": 5.5, "p": 0.3296}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.6851}, {"lf": 21.5, "lc": 4.5, "p": 0.5065}, {"lf": 23.5, "lc": 5.5, "p": 0.3368}], "goals": {"p1": 0.4755, "px": 0.2444, "p2": 0.2801, "po25": 0.5385}, "sugestii": [{"tip": "Peste 21.5 faulturi", "p": 0.8435, "fair": 1.19, "min": 1.22, "kind": "faulturi", "edge": "rată faulturi"}, {"tip": "Peste 3.5 cartonașe", "p": 0.6885, "fair": 1.45, "min": 1.5, "kind": "galbene", "edge": "severitate"}]}, {"lg": "F2", "liga": "Ligue 2", "home": "Montpellier", "away": "Red Star", "time": "19:45", "stats": {"faulturi": [{"line": 19.5, "p": 0.9864}, {"line": 21.5, "p": 0.9638}, {"line": 23.5, "p": 0.919}], "cornere": [{"line": 8.5, "p": 0.5729}, {"line": 9.5, "p": 0.4415}, {"line": 10.5, "p": 0.3203}], "galbene": [{"line": 3.5, "p": 0.6857}, {"line": 4.5, "p": 0.5}, {"line": 5.5, "p": 0.3265}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.5445}, {"lf": 21.5, "lc": 4.5, "p": 0.3596}, {"lf": 23.5, "lc": 5.5, "p": 0.213}], "goals": {"p1": 0.3725, "px": 0.2738, "p2": 0.3537, "po25": 0.4412}, "sugestii": [{"tip": "Peste 21.5 faulturi", "p": 0.9638, "fair": 1.04, "min": 1.07, "kind": "faulturi", "edge": "rată faulturi"}, {"tip": "Peste 3.5 cartonașe", "p": 0.6857, "fair": 1.46, "min": 1.5, "kind": "galbene", "edge": "severitate"}]}, {"lg": "F2", "liga": "Ligue 2", "home": "Boulogne", "away": "Reims", "time": "19:45", "stats": {"faulturi": [{"line": 19.5, "p": 0.9361}, {"line": 21.5, "p": 0.8648}, {"line": 23.5, "p": 0.7563}], "cornere": [{"line": 8.5, "p": 0.4878}, {"line": 9.5, "p": 0.3573}, {"line": 10.5, "p": 0.2454}], "galbene": [{"line": 3.5, "p": 0.5419}, {"line": 4.5, "p": 0.3469}, {"line": 5.5, "p": 0.1958}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.558}, {"lf": 21.5, "lc": 4.5, "p": 0.3709}, {"lf": 23.5, "lc": 5.5, "p": 0.2196}], "goals": {"p1": 0.2129, "px": 0.2541, "p2": 0.533, "po25": 0.4436}, "sugestii": [{"tip": "Peste 21.5 faulturi", "p": 0.8648, "fair": 1.16, "min": 1.19, "kind": "faulturi", "edge": "rată faulturi"}, {"tip": "Peste 19.5 faulturi + peste 3.5 cartonașe", "p": 0.558, "fair": 1.79, "min": 1.85, "kind": "combo", "edge": "corelație"}]}, {"lg": "T1", "liga": "Süper Lig", "home": "Besiktas", "away": "Buyuksehyr", "time": "16:00", "stats": {"faulturi": [{"line": 19.5, "p": 0.8931}, {"line": 21.5, "p": 0.7936}, {"line": 23.5, "p": 0.658}], "cornere": [{"line": 8.5, "p": 0.6744}, {"line": 9.5, "p": 0.5501}, {"line": 10.5, "p": 0.425}], "galbene": [{"line": 3.5, "p": 0.6308}, {"line": 4.5, "p": 0.4382}, {"line": 5.5, "p": 0.2708}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.541}, {"lf": 21.5, "lc": 4.5, "p": 0.3527}, {"lf": 23.5, "lc": 5.5, "p": 0.2036}], "goals": {"p1": 0.5743, "px": 0.2201, "p2": 0.2056, "po25": 0.5733}, "sugestii": [{"tip": "Peste 21.5 faulturi", "p": 0.7936, "fair": 1.26, "min": 1.3, "kind": "faulturi", "edge": "rată faulturi"}, {"tip": "Peste 19.5 faulturi + peste 3.5 cartonașe", "p": 0.541, "fair": 1.85, "min": 1.9, "kind": "combo", "edge": "corelație"}]}, {"lg": "E3", "liga": "League Two", "home": "Walsall", "away": "Salford", "time": "20:00", "stats": {"faulturi": [{"line": 19.5, "p": 0.8988}, {"line": 21.5, "p": 0.8025}, {"line": 23.5, "p": 0.6698}], "cornere": [{"line": 8.5, "p": 0.6592}, {"line": 9.5, "p": 0.5332}, {"line": 10.5, "p": 0.4082}], "galbene": [{"line": 3.5, "p": 0.7156}, {"line": 4.5, "p": 0.5356}, {"line": 5.5, "p": 0.3605}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.5178}, {"lf": 21.5, "lc": 4.5, "p": 0.329}, {"lf": 23.5, "lc": 5.5, "p": 0.1837}], "goals": {"p1": 0.3348, "px": 0.2654, "p2": 0.3998, "po25": 0.4721}, "sugestii": [{"tip": "Peste 21.5 faulturi", "p": 0.8025, "fair": 1.25, "min": 1.28, "kind": "faulturi", "edge": "rată faulturi"}, {"tip": "Peste 3.5 cartonașe", "p": 0.7156, "fair": 1.4, "min": 1.44, "kind": "galbene", "edge": "severitate"}]}, {"lg": "T1", "liga": "Süper Lig", "home": "Rizespor", "away": "Trabzonspor", "time": "16:00", "stats": {"faulturi": [{"line": 19.5, "p": 0.8643}, {"line": 21.5, "p": 0.7495}, {"line": 23.5, "p": 0.6021}], "cornere": [{"line": 8.5, "p": 0.6709}, {"line": 9.5, "p": 0.5462}, {"line": 10.5, "p": 0.4211}], "galbene": [{"line": 3.5, "p": 0.4884}, {"line": 4.5, "p": 0.2968}, {"line": 5.5, "p": 0.1582}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.4925}, {"lf": 21.5, "lc": 4.5, "p": 0.3064}, {"lf": 23.5, "lc": 5.5, "p": 0.1678}], "goals": {"p1": 0.2586, "px": 0.2422, "p2": 0.4992, "po25": 0.5326}, "sugestii": [{"tip": "Peste 21.5 faulturi", "p": 0.7495, "fair": 1.33, "min": 1.37, "kind": "faulturi", "edge": "rată faulturi"}, {"tip": "Peste 19.5 faulturi + peste 3.5 cartonașe", "p": 0.4925, "fair": 2.03, "min": 2.09, "kind": "combo", "edge": "corelație"}]}, {"lg": "T1", "liga": "Süper Lig", "home": "Galatasaray", "away": "Fenerbahce", "time": "18:30", "stats": {"faulturi": [{"line": 19.5, "p": 0.7635}, {"line": 21.5, "p": 0.6122}, {"line": 23.5, "p": 0.4465}], "cornere": [{"line": 8.5, "p": 0.6529}, {"line": 9.5, "p": 0.5263}, {"line": 10.5, "p": 0.4013}], "galbene": [{"line": 3.5, "p": 0.6188}, {"line": 4.5, "p": 0.4252}, {"line": 5.5, "p": 0.2596}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.441}, {"lf": 21.5, "lc": 4.5, "p": 0.2596}, {"lf": 23.5, "lc": 5.5, "p": 0.1333}], "goals": {"p1": 0.41, "px": 0.2379, "p2": 0.3521, "po25": 0.5992}, "sugestii": [{"tip": "Peste 21.5 faulturi", "p": 0.6122, "fair": 1.63, "min": 1.68, "kind": "faulturi", "edge": "rată faulturi"}]}, {"lg": "F1", "liga": "Ligue 1", "home": "Paris SG", "away": "Lyon", "time": "19:30", "stats": {"faulturi": [{"line": 19.5, "p": 0.719}, {"line": 21.5, "p": 0.5577}, {"line": 23.5, "p": 0.3911}], "cornere": [{"line": 8.5, "p": 0.7038}, {"line": 9.5, "p": 0.5834}, {"line": 10.5, "p": 0.459}], "galbene": [{"line": 3.5, "p": 0.4167}, {"line": 4.5, "p": 0.2349}, {"line": 5.5, "p": 0.1155}]}, "combos": [{"lf": 19.5, "lc": 3.5, "p": 0.2468}, {"lf": 21.5, "lc": 4.5, "p": 0.1142}, {"lf": 23.5, "lc": 5.5, "p": 0.0454}], "goals": {"p1": 0.5164, "px": 0.239, "p2": 0.2446, "po25": 0.5342}, "sugestii": []}]};
-(function(){
-  if(!D){ document.getElementById('list').innerHTML='<p style="color:var(--mut)">Fără date.</p>'; return; }
-  document.getElementById('sub').textContent = D.date + ' · ' + D.matches.length + ' meciuri din ' + D.count + ' analizate · generat ' + D.generated;
-  var L = document.getElementById('list');
-  var pct = function(p){ return (p*100).toFixed(1)+'%'; };
-  var fair = function(p){ return p>0.001 ? (1/p).toFixed(2) : '—'; };
-  D.matches.forEach(function(m, mi){
-    var card = document.createElement('div'); card.className='match';
-    var h = '<div class="mhead"><span class="teams">'+m.home+' – '+m.away+'</span>' +
-            '<span class="info">'+m.liga+' · '+m.time+'</span></div>';
-    if(m.sugestii.length){
-      h += '<div class="sug"><div class="stitle">Sugestii model</div>';
-      m.sugestii.forEach(function(s, si){
-        h += '<div class="srow"><span>'+s.tip+'</span><span class="p">'+pct(s.p)+'</span>' +
-             '<span class="fair" title="cotă corectă">'+s.fair+'</span>' +
-             '<input id="in-'+mi+'-'+si+'" inputmode="decimal" placeholder="cota ta" aria-label="cota Superbet">' +
-             '<span class="verdict" id="v-'+mi+'-'+si+'"></span></div>' +
-             '<div style="font-size:11px;color:var(--mut);padding-left:0">joacă doar dacă Superbet dă minim <b style="color:var(--txt)">'+s.min+'</b> · edge: '+s.edge+'</div>';
-      });
-      h += '</div>';
-    }
-    h += '<div class="grid">';
-    [['faulturi','Faulturi'],['cornere','Cornere'],['galbene','Cartonașe']].forEach(function(pair){
-      h += '<div class="col"><h3>'+pair[1]+' (peste)</h3>';
-      m.stats[pair[0]].forEach(function(d){
-        h += '<div class="lrow"><span>'+d.line+'</span><span>'+pct(d.p)+' · <span class="fair">'+fair(d.p)+'</span></span></div>';
-      });
-      h += '</div>';
-    });
-    h += '</div>';
-    h += '<div class="goals">Combos: ' + m.combos.map(function(c){
-      return '<span class="combo-line">'+c.lf+'+fault & '+c.lc+'+cart: '+pct(c.p)+' ('+fair(c.p)+')</span>';
-    }).join(' · ') + '</div>';
-    h += '<div class="goals">Goluri: 1 <b>'+pct(m.goals.p1)+'</b> · X <b>'+pct(m.goals.px)+'</b> · 2 <b>'+pct(m.goals.p2)+'</b> · peste 2.5: <b>'+pct(m.goals.po25)+'</b> <span style="color:var(--bad)">(doar informație — modelul nu are edge aici)</span></div>';
-    card.innerHTML = h;
-    L.appendChild(card);
-    m.sugestii.forEach(function(s, si){
-      var inp = document.getElementById('in-'+mi+'-'+si), v = document.getElementById('v-'+mi+'-'+si);
-      inp.addEventListener('input', function(){
-        var o = parseFloat(this.value.replace(',','.'));
-        if(!o || o<=1){ v.textContent=''; v.className='verdict'; return; }
-        var e = s.p*o-1;
-        v.textContent = (e>=0?'+':'')+(e*100).toFixed(1)+'%';
-        v.className = 'verdict ' + (o>=s.min ? 'play' : 'no');
-      });
-    });
-  });
-})();
-</script>
 </body>
 </html>
