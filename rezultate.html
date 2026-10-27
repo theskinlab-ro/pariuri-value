@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pariuri Value — Rezultate pe hârtie</title>
+<style>
+  :root { --bg:#0f1115; --card:#171a21; --line:#262b36; --txt:#e8eaf0; --mut:#9aa3b2; --ok:#2ecc71; --bad:#e74c3c; --warn:#f1c40f; --acc:#5b9dff; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--txt); font-family:'Segoe UI',system-ui,sans-serif; padding:16px; max-width:980px; margin:0 auto; }
+  h1 { font-size:22px; font-weight:600; }
+  .sub { color:var(--mut); font-size:13px; margin-top:4px; }
+  .stats { display:flex; gap:12px; flex-wrap:wrap; margin:16px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 18px; min-width:130px; }
+  .card .v { font-size:22px; font-weight:700; margin-top:4px; }
+  .card .l { color:var(--mut); font-size:12px; text-transform:uppercase; letter-spacing:.4px; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:14px; }
+  th, td { padding:9px 10px; text-align:left; border-bottom:1px solid var(--line); }
+  th { background:#1d212b; color:var(--mut); font-size:12px; text-transform:uppercase; letter-spacing:.4px; }
+  tr:last-child td { border-bottom:none; }
+  .meci { font-weight:600; white-space:nowrap; }
+  .liga { display:inline-block; margin-left:6px; font-size:11px; color:var(--mut); border:1px solid var(--line); border-radius:4px; padding:1px 5px; }
+  tr.won td:nth-child(5) { color:var(--ok); font-weight:700; }
+  tr.lost td:nth-child(5) { color:var(--bad); font-weight:700; }
+  tr.pend td:nth-child(5) { color:var(--warn); font-weight:700; }
+  .prof { font-weight:700; white-space:nowrap; }
+  tr.won .prof { color:var(--ok); } tr.lost .prof { color:var(--bad); }
+  .none { color:var(--mut); text-align:center; padding:24px; }
+  footer { color:var(--mut); font-size:12px; margin-top:14px; line-height:1.6; }
+  a { color:var(--acc); }
+</style>
+</head>
+<body>
+<h1>📈 Rezultatele pariurilor pe hârtie</h1>
+<div class="sub">Verificat 27.10.2026 08:24 · miză fixă 10 RON pe selecție · sursă rezultate: football-data (aceeași ca modelul)</div>
+<div class="stats">
+  <div class="card"><div class="l">Pariuri settle-uite</div><div class="v">4</div></div>
+  <div class="card"><div class="l">Câștigate</div><div class="v" style="color:var(--ok)">3</div></div>
+  <div class="card"><div class="l">Bani pariați</div><div class="v">40 RON</div></div>
+  <div class="card"><div class="l">Profit / pierdere</div><div class="v" style="color:var(--ok)">+16 RON</div></div>
+  <div class="card"><div class="l">ROI</div><div class="v" style="color:var(--ok)">+39.0%</div></div>
+  <div class="card"><div class="l">În așteptare</div><div class="v" style="color:var(--warn)">6</div></div>
+</div>
+<table>
+  <thead><tr><th>Data</th><th>Meci</th><th>Selecție</th><th>Total real</th><th>Rezultat</th><th>Profit</th></tr></thead>
+  <tbody>
+<tr class="pend"><td>2026-10-27</td><td class="meci">Vicenza – Modena<span class="liga">I2</span></td><td>peste 13.5 cornere @4.75</td><td>—</td><td>⏳ așteaptă</td><td class="prof">—</td></tr>
+<tr class="pend"><td>2026-10-27</td><td class="meci">Torino – Como<span class="liga">I1</span></td><td>peste 7.5 cornere @1.52</td><td>—</td><td>⏳ așteaptă</td><td class="prof">—</td></tr>
+<tr class="pend"><td>2026-10-27</td><td class="meci">Sassuolo – Lazio<span class="liga">I1</span></td><td>peste 4.5 cartonașe @2.22</td><td>—</td><td>⏳ așteaptă</td><td class="prof">—</td></tr>
+<tr class="pend"><td>2026-10-27</td><td class="meci">Roma – Cagliari<span class="liga">I1</span></td><td>peste 22.5 faulturi @1.78</td><td>—</td><td>⏳ așteaptă</td><td class="prof">—</td></tr>
+<tr class="pend"><td>2026-10-27</td><td class="meci">Mantova – Cremonese<span class="liga">I2</span></td><td>peste 4.5 cartonașe @2.12</td><td>—</td><td>⏳ așteaptă</td><td class="prof">—</td></tr>
+<tr class="pend"><td>2026-10-27</td><td class="meci">Cesena – Empoli<span class="liga">I2</span></td><td>peste 7.5 cornere @1.32</td><td>—</td><td>⏳ așteaptă</td><td class="prof">—</td></tr>
+<tr class="lost"><td>2026-10-26</td><td class="meci">Walsall – Salford<span class="liga">E3</span></td><td>peste 3.5 cartonașe @1.80</td><td>1</td><td>❌ LOST</td><td class="prof">-10 RON</td></tr>
+<tr class="won"><td>2026-10-26</td><td class="meci">Santa Clara – Benfica<span class="liga">P1</span></td><td>peste 26.5 faulturi @1.75</td><td>30</td><td>✅ WON</td><td class="prof">+8 RON</td></tr>
+<tr class="won"><td>2026-10-26</td><td class="meci">Santa Clara – Benfica<span class="liga">P1</span></td><td>peste 4.5 cartonașe @1.71</td><td>9</td><td>✅ WON</td><td class="prof">+7 RON</td></tr>
+<tr class="won"><td>2026-10-26</td><td class="meci">Paris SG – Lyon<span class="liga">F1</span></td><td>peste 21.5 faulturi @2.10</td><td>22</td><td>✅ WON</td><td class="prof">+11 RON</td></tr>
+  </tbody>
+</table>
+<footer>
+  Acesta este un jurnal de pariuri pe hârtie — nu s-au folosit bani reali.
+  Scopul: să vedem dacă modelul are avantaj real (ROI pozitiv pe minim câteva sute de pariuri) sau a fost doar variație.
+  <div style="margin-top:8px"><a href="index.html">← Înapoi la shortlistul zilei</a></div>
+</footer>
+</body>
+</html>
