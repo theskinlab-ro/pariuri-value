@@ -1,0 +1,6 @@
+{"entries": [
+ {"date": "2026-10-26", "eid": 14246839, "lg": "F1", "home": "Paris SG", "away": "Lyon", "stat_key": "faulturi", "line": 21.5, "odds": 2.10, "verdict": "JOCI", "stake": 10, "status": "PENDING", "total": null, "profit": null, "settledAt": null},
+ {"date": "2026-10-26", "eid": 14231666, "lg": "P1", "home": "Santa Clara", "away": "Benfica", "stat_key": "faulturi", "line": 26.5, "odds": 1.75, "verdict": "JOCI", "stake": 10, "status": "PENDING", "total": null, "profit": null, "settledAt": null},
+ {"date": "2026-10-26", "eid": 14231666, "lg": "P1", "home": "Santa Clara", "away": "Benfica", "stat_key": "galbene", "line": 4.5, "odds": 1.71, "verdict": "miză mică", "stake": 10, "status": "PENDING", "total": null, "profit": null, "settledAt": null},
+ {"date": "2026-10-26", "eid": 15404652, "lg": "E3", "home": "Walsall", "away": "Salford", "stat_key": "galbene", "line": 3.5, "odds": 1.80, "verdict": "miză mică", "stake": 10, "status": "PENDING", "total": null, "profit": null, "settledAt": null}
+]}
