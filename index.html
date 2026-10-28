@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pariuri Value — Top 20 meciuri</title>
+<title>Pariuri Value — Selecții șansă ≥70%</title>
 <style>
   :root { --bg:#0f1115; --card:#171a21; --line:#262b36; --txt:#e8eaf0; --mut:#9aa3b2; --ok:#2ecc71; --bad:#e74c3c; --warn:#f1c40f; --acc:#5b9dff; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -41,80 +41,31 @@
 </head>
 <body>
 <header>
-  <h1>📋 Pariuri Value — 2026-10-28</h1>
-  <div class="sub">Generat 28.10.2026 15:39 · model Poisson pe ultimele 4 sezoane · 20 de meciuri: 10 prioritizate pe ligi + 10 cu cele mai mari șanse</div>
+  <h1>📋 Pariuri Value — 2026-10-29</h1>
+  <div class="sub">Generat 28.10.2026 23:58 · model Poisson pe ultimele 4 sezoane · scanate toate meciurile zilei — se afișează doar selecțiile cu șansă ≥ 70%</div>
 </header>
 <div class="regula">
-  <b>Cum citești tabelul:</b> la fiecare meci modelul îți arată <b>pariul cu cea mai mare șansă
-  statistică</b> și până la <b>2 variante de rezervă</b> pe rânduri separate sub el — fiecare cu
-  coloanele ei: cota corectă, cota Superbet, șansa și verdictul propriu.
-  Fiecare variantă listată intră în jurnalul de hârtie cu <b>miză fixă de 10 RON</b>,
-  ca să vedem statistic care variantă câștigă mai des.
-  <b>JOCI</b> = șansă de minim 65% (faulturi/cartonașe) sau 75% (cornere) ·
-  <b>miză mică</b> = șansă bună, dar nu deplin încredere · <b>NU JOCI</b> = nici o linie nu trece pragul.
+  <b>Cum citești tabelul:</b> se scanează <b>toate</b> meciurile zilei din ligile acoperite, dar în listă
+  intră <b>doar meciurile unde modelul găsește o selecție cu șansă de cel puțin 70%</b>.
+  La fiecare meci vezi pariul principal și până la <b>2 variante de rezervă</b> (toate ≥ 70%) pe rânduri
+  separate sub el — fiecare cu cota corectă, cota Superbet, șansa și verdictul propriu.
+  Fiecare variantă listată intră în jurnalul de hârtie cu <b>miză fixă de 10 RON</b>.
+  <b>JOCI</b> = șansă de minim 70% pe orice piață · altfel meciul nu apare deloc în listă.
   „Așteptat" = totalul calculat de model pentru meci. ★ pe cota SB = Superbet plătește mai mult
   decât cota corectă — modelul e mai optimist decât piața, ai value în plus.
+  Zilele cu puține meciuri bune vor avea listă scurtă — asta e intenționat: <b>mai bine 3 pariuri
+  câștigate decât 20 pierdute</b>.
 </div>
-<h2 class="sec">📌 Meciurile principale<span>top 10 din ligile prioritizate</span></h2>
+<h2 class="sec">✅ Selecții cu șansă ≥ 70%<span>din toate meciurile zilei scanate, ordonate după probabilitate</span></h2>
 <table>
   <thead><tr><th>Meci</th><th>Ce pariezi</th><th>Așteptat</th><th>Cota mea</th><th>Cota SB</th><th>Șansă</th><th>Verdict</th></tr></thead>
   <tbody>
-<tr><td class="meci">Genoa – Juventus<span class="liga">I1</span></td><td class="sel">peste 7.5 cornere</td><td><span class="exp">9.7</span></td><td>1.34</td><td class="sb val">1.43 ★</td><td>75%</td><td class="vd small">miză mică</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 20.5 faulturi</td><td>—</td><td>1.34</td><td class="sb val">1.53 ★</td><td>74%</td><td class="vd play">JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 2</span></td><td class="sel">peste 2.5 cartonașe</td><td>—</td><td>1.35</td><td class="sb val">1.46 ★</td><td>74%</td><td class="vd play">JOCI</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Genoa</b> are în medie <b>4.1</b> cornere acasă/meci, <b>Juventus</b> <b>5.7</b> în deplasare/meci. Media ligii: 5.0 acasă / 4.1 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>9.7</b> cornere.<br>De ce nu celelalte piețe? faulturi: cea mai bună linie peste 20.5 avea doar 74% șansă (cota SB 1.53). cartonașe: cea mai bună linie peste 2.5 avea doar 74% șansă (cota SB 1.46).</div></details></td></tr>
-<tr><td class="meci">Milan – Bologna<span class="liga">I1</span></td><td class="sel">peste 2.5 cartonașe</td><td><span class="exp">3.6</span></td><td>1.43</td><td class="sb">1.36</td><td>70%</td><td class="vd play">JOCI</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Milan</b> are în medie <b>1.6</b> cartonașe galbene acasă/meci, <b>Bologna</b> <b>1.7</b> în deplasare/meci. Media ligii: 1.7 acasă / 1.9 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>3.6</b> cartonașe galbene.<br>De ce nu celelalte piețe? faulturi: cea mai bună linie peste 23.5 avea doar 55% șansă (cota SB 1.69). cornere: cea mai bună linie peste 7.5 avea doar 49% șansă (cota SB 1.57).</div></details></td></tr>
-<tr><td class="meci">Monza – Napoli<span class="liga">I1</span></td><td class="sel">peste 7.5 cornere</td><td><span class="exp">9.0</span></td><td>1.47</td><td class="sb">1.45</td><td>68%</td><td class="vd small">miză mică</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 20.5 faulturi</td><td>—</td><td>1.59</td><td class="sb val">1.66 ★</td><td>63%</td><td class="vd small">miză mică</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Monza</b> are în medie <b>3.9</b> cornere acasă/meci, <b>Napoli</b> <b>5.3</b> în deplasare/meci. Media ligii: 5.0 acasă / 4.1 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>9.0</b> cornere.<br>De ce nu celelalte piețe? faulturi: cea mai bună linie peste 20.5 avea doar 63% șansă (cota SB 1.66). cartonașe: cea mai bună linie peste 3.5 avea doar 42% șansă (cota SB 1.67).</div></details></td></tr>
-<tr><td class="meci">Parma – Udinese<span class="liga">I1</span></td><td class="sel">peste 2.5 cartonașe</td><td><span class="exp">3.4</span></td><td>1.51</td><td class="sb">1.36</td><td>66%</td><td class="vd play">JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 7.5 cornere</td><td>—</td><td>1.66</td><td class="sb">1.40</td><td>60%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 2</span></td><td class="sel">peste 22.5 faulturi</td><td>—</td><td>1.68</td><td class="sb val">1.69 ★</td><td>59%</td><td class="vd small">miză mică</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Parma</b> are în medie <b>1.9</b> cartonașe galbene acasă/meci, <b>Udinese</b> <b>1.7</b> în deplasare/meci. Media ligii: 1.7 acasă / 1.9 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>3.4</b> cartonașe galbene.<br>De ce nu celelalte piețe? faulturi: cea mai bună linie peste 22.5 avea doar 59% șansă (cota SB 1.69). cornere: cea mai bună linie peste 7.5 avea doar 60% șansă (cota SB 1.40).</div></details></td></tr>
-<tr><td class="meci">Venezia – Milan<span class="liga">I1</span></td><td class="sel">peste 7.5 cornere</td><td><span class="exp">8.6</span></td><td>1.61</td><td class="sb">1.42</td><td>62%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 20.5 faulturi</td><td>—</td><td>1.66</td><td class="sb">1.62</td><td>60%</td><td class="vd small">miză mică</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Venezia</b> are în medie <b>3.6</b> cornere acasă/meci, <b>Milan</b> <b>3.9</b> în deplasare/meci. Media ligii: 5.0 acasă / 4.1 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>8.6</b> cornere.<br>De ce nu celelalte piețe? faulturi: cea mai bună linie peste 20.5 avea doar 60% șansă (cota SB 1.62). cartonașe: cea mai bună linie peste 3.5 avea doar 50% șansă (cota SB 1.80).</div></details></td></tr>
-<tr><td class="meci">Aberdeen – Falkirk<span class="liga">SC0</span></td><td class="sel">peste 8.5 cornere</td><td><span class="exp">10.9</span></td><td>1.32</td><td class="sb val">1.36 ★</td><td>76%</td><td class="vd play">JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 3.5 cartonașe</td><td>—</td><td>1.53</td><td class="sb val">1.54 ★</td><td>65%</td><td class="vd play">JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 2</span></td><td class="sel">peste 9.5 cornere</td><td>—</td><td>1.55</td><td class="sb val">1.58 ★</td><td>65%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Aberdeen</b> are în medie <b>6.0</b> cornere acasă/meci, <b>Falkirk</b> <b>4.8</b> în deplasare/meci. Media ligii: 5.7 acasă / 4.9 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>10.9</b> cornere.<br>De ce nu celelalte piețe? cartonașe: cea mai bună linie peste 3.5 avea doar 65% șansă (cota SB 1.54).</div></details></td></tr>
-<tr><td class="meci">Celtic – Dundee United<span class="liga">SC0</span></td><td class="sel">peste 2.5 cartonașe</td><td><span class="exp">3.7</span></td><td>1.39</td><td class="sb">1.36</td><td>72%</td><td class="vd play">JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 10.5 cornere</td><td>—</td><td>1.80</td><td class="sb">1.52</td><td>55%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Celtic</b> are în medie <b>1.8</b> cartonașe galbene acasă/meci, <b>Dundee United</b> <b>2.2</b> în deplasare/meci. Media ligii: 1.7 acasă / 2.0 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>3.7</b> cartonașe galbene.<br>De ce nu celelalte piețe? cornere: cea mai bună linie peste 10.5 avea doar 55% șansă (cota SB 1.52).</div></details></td></tr>
-<tr><td class="meci">Dundee United – Kilmarnock<span class="liga">SC0</span></td><td class="sel">peste 8.5 cornere</td><td><span class="exp">11.9</span></td><td>1.19</td><td class="sb val">1.40 ★</td><td>84%</td><td class="vd play">JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 9.5 cornere</td><td>—</td><td>1.33</td><td class="sb val">1.63 ★</td><td>75%</td><td class="vd play">JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 2</span></td><td class="sel">peste 10.5 cornere</td><td>—</td><td>1.55</td><td class="sb val">1.97 ★</td><td>65%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Dundee United</b> are în medie <b>5.9</b> cornere acasă/meci, <b>Kilmarnock</b> <b>4.6</b> în deplasare/meci. Media ligii: 5.7 acasă / 4.9 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>11.9</b> cornere.<br>De ce nu celelalte piețe? cartonașe: cea mai bună linie peste 3.5 avea doar 51% șansă (cota SB 1.53).</div></details></td></tr>
-<tr><td class="meci">St Johnstone – Motherwell<span class="liga">SC0</span></td><td class="sel">peste 8.5 cornere</td><td><span class="exp">10.4</span></td><td>1.40</td><td class="sb val">1.44 ★</td><td>71%</td><td class="vd small">miză mică</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 9.5 cornere</td><td>—</td><td>1.68</td><td class="sb val">1.69 ★</td><td>59%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>St Johnstone</b> are în medie <b>3.6</b> cornere acasă/meci, <b>Motherwell</b> <b>4.5</b> în deplasare/meci. Media ligii: 5.7 acasă / 4.9 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>10.4</b> cornere.<br>De ce nu celelalte piețe? cartonașe: cea mai bună linie peste 3.5 avea doar 54% șansă (cota SB 1.63).<br>Arbitru: <b>J Beaton</b> — mediu, nu schimbă calculele.</div></details></td></tr>
-<tr><td class="meci">St Mirren – Hibernian<span class="liga">SC0</span></td><td class="sel">peste 9.5 cornere</td><td><span class="exp">10.1</span></td><td>1.78</td><td class="sb">1.47</td><td>56%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>St Mirren</b> are în medie <b>5.2</b> cornere acasă/meci, <b>Hibernian</b> <b>4.5</b> în deplasare/meci. Media ligii: 5.7 acasă / 4.9 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>10.1</b> cornere.<br>De ce nu celelalte piețe? cartonașe: cea mai bună linie peste 3.5 avea doar 52% șansă (cota SB 1.55).<br>Arbitru: <b>R Hardie</b> — mediu, nu schimbă calculele.</div></details></td></tr>
-  </tbody>
-</table>
-<h2 class="sec">🎯 Cele mai mari șanse de câștig<span>top 10 după probabilitatea modelului, din restul meciurilor zilei</span></h2>
-<table>
-  <thead><tr><th>Meci</th><th>Ce pariezi</th><th>Așteptat</th><th>Cota mea</th><th>Cota SB</th><th>Șansă</th><th>Verdict</th></tr></thead>
-  <tbody>
-<tr><td class="meci">Hearts – Rangers<span class="liga">SC0</span></td><td class="sel">peste 8.5 cornere</td><td><span class="exp">10.9</span></td><td>1.32</td><td class="sb val">1.38 ★</td><td>76%</td><td class="vd play">JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 9.5 cornere</td><td>—</td><td>1.55</td><td class="sb val">1.61 ★</td><td>65%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 2</span></td><td class="sel">peste 3.5 cartonașe</td><td>—</td><td>1.66</td><td class="sb">1.49</td><td>60%</td><td class="vd small">miză mică</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Hearts</b> are în medie <b>6.5</b> cornere acasă/meci, <b>Rangers</b> <b>6.4</b> în deplasare/meci. Media ligii: 5.7 acasă / 4.9 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>10.9</b> cornere.<br>De ce nu celelalte piețe? cartonașe: cea mai bună linie peste 3.5 avea doar 60% șansă (cota SB 1.49).<br>Arbitru: <b>D Robertson</b> — mediu, nu schimbă calculele.</div></details></td></tr>
-<tr><td class="meci">Carrarese – Arezzo<span class="liga">I2</span></td><td class="sel">peste 7.5 cornere</td><td><span class="exp">9.2</span></td><td>1.43</td><td class="sb">1.35</td><td>70%</td><td class="vd small">miză mică</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 8.5 cornere</td><td>—</td><td>1.75</td><td class="sb">1.58</td><td>57%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Carrarese</b> are în medie <b>4.9</b> cornere acasă/meci, <b>Arezzo</b> <b>2.6</b> în deplasare/meci. Media ligii: 5.2 acasă / 4.4 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>9.2</b> cornere.<br>De ce nu celelalte piețe? cartonașe: cea mai bună linie peste 3.5 avea doar 53% șansă (cota SB 1.39).</div></details></td></tr>
-<tr><td class="meci">Juve Stabia – Verona<span class="liga">I2</span></td><td class="sel">peste 7.5 cornere</td><td><span class="exp">9.2</span></td><td>1.44</td><td class="sb">1.40</td><td>69%</td><td class="vd small">miză mică</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 3.5 cartonașe</td><td>—</td><td>1.60</td><td class="sb">1.38</td><td>62%</td><td class="vd small">miză mică</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 2</span></td><td class="sel">peste 8.5 cornere</td><td>—</td><td>1.77</td><td class="sb">1.65</td><td>56%</td><td class="vd skip">NU JOCI</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Juve Stabia</b> are în medie <b>5.5</b> cornere acasă/meci, <b>Verona</b> <b>6.2</b> în deplasare/meci. Media ligii: 5.2 acasă / 4.4 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>9.2</b> cornere.<br>De ce nu celelalte piețe? cartonașe: cea mai bună linie peste 3.5 avea doar 62% șansă (cota SB 1.38).</div></details></td></tr>
-<tr><td class="meci">Pisa – Palermo<span class="liga">I2</span></td><td class="sel">peste 8.5 cornere</td><td><span class="exp">9.9</span></td><td>1.52</td><td class="sb val">1.53 ★</td><td>66%</td><td class="vd small">miză mică</td></tr>
-<tr class="altrow"><td class="meci"><span class="var">↳ varianta 1</span></td><td class="sel">peste 3.5 cartonașe</td><td>—</td><td>1.67</td><td class="sb">1.56</td><td>60%</td><td class="vd small">miză mică</td></tr>
-<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Pisa</b> are în medie <b>5.8</b> cornere acasă/meci, <b>Palermo</b> <b>4.6</b> în deplasare/meci. Media ligii: 5.2 acasă / 4.4 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>9.9</b> cornere.<br>De ce nu celelalte piețe? cartonașe: cea mai bună linie peste 3.5 avea doar 60% șansă (cota SB 1.56).</div></details></td></tr>
+<tr><td class="meci">Fiorentina – Atalanta<span class="liga">I1</span></td><td class="sel">peste 7.5 cornere</td><td><span class="exp">9.4</span></td><td>1.38</td><td class="sb val">1.43 ★</td><td>73%</td><td class="vd play">JOCI</td></tr>
+<tr class="detail"><td colspan="7"><details><summary>De ce acest pariu? — vezi cifrele</summary><div class="why"><b>Fiorentina</b> are în medie <b>5.6</b> cornere acasă/meci, <b>Atalanta</b> <b>4.0</b> în deplasare/meci. Media ligii: 5.0 acasă / 4.1 deplasare. Ajustat pentru stilul celor două echipe (echipele care faultează mult / domină împing media în sus), modelul așteaptă un total de <b>9.4</b> cornere.<br>De ce nu celelalte piețe? faulturi: cea mai bună linie peste 21.5 avea doar 67% șansă (cota SB 1.92). cartonașe: cea mai bună linie peste 2.5 avea doar 68% șansă (cota SB 1.40).</div></details></td></tr>
   </tbody>
 </table>
 <footer>
-  Piața „faulturi" e cea mai bine calibrată a modelului; „cornere" cea mai slabă — de aceea cornerele au doar miză mică.
+  Piața „faulturi" e cea mai bine calibrată a modelului; „cornere" cea mai slabă — de aceea pragul unic de 70% e obligatoriu peste tot.
   Aici nu se joacă goluri: modelul a pierdut la backtest pe goluri. Fără meciuri de cupă (modelul e calibrat pe campionat).
   <div style="margin-top:8px"><a href="rezultate.html" style="color:var(--acc)">📈 Rezultatele pariurilor pe hârtie</a></div>
 </footer>
