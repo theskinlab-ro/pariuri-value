@@ -14,7 +14,8 @@
    "status": "WON",
    "total": 22.0,
    "profit": 11.0,
-   "settledAt": "2026-10-27"
+   "settledAt": "2026-10-27",
+   "rol": "principal"
   },
   {
    "date": "2026-10-26",
@@ -30,7 +31,8 @@
    "status": "WON",
    "total": 30.0,
    "profit": 7.5,
-   "settledAt": "2026-10-27"
+   "settledAt": "2026-10-27",
+   "rol": "principal"
   },
   {
    "date": "2026-10-26",
@@ -46,7 +48,8 @@
    "status": "WON",
    "total": 9.0,
    "profit": 7.1,
-   "settledAt": "2026-10-27"
+   "settledAt": "2026-10-27",
+   "rol": "principal"
   },
   {
    "date": "2026-10-26",
@@ -62,7 +65,8 @@
    "status": "LOST",
    "total": 1.0,
    "profit": -10,
-   "settledAt": "2026-10-27"
+   "settledAt": "2026-10-27",
+   "rol": "principal"
   },
   {
    "date": "2026-10-27",
@@ -78,7 +82,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-27",
@@ -94,7 +99,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-27",
@@ -110,7 +116,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-27",
@@ -126,7 +133,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-27",
@@ -142,7 +150,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-27",
@@ -158,7 +167,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -175,7 +185,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -192,7 +203,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -209,7 +221,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -226,7 +239,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -243,7 +257,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -260,7 +275,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -277,7 +293,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -294,7 +311,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -311,7 +329,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
@@ -328,7 +347,8 @@
    "status": "PENDING",
    "total": null,
    "profit": null,
-   "settledAt": null
+   "settledAt": null,
+   "rol": "principal"
   },
   {
    "date": "2026-10-28",
