@@ -1,1 +1,22 @@
-{"entries": []}
+{
+ "entries": [
+  {
+   "date": "2026-10-29",
+   "eid": 14276248,
+   "lg": "I1",
+   "home": "Fiorentina",
+   "away": "Atalanta",
+   "stat_key": "cornere",
+   "line": 7.5,
+   "odds": 1.43,
+   "verdict": "JOCI",
+   "p": 0.725,
+   "rol": "principal",
+   "stake": 10,
+   "status": "PENDING",
+   "total": null,
+   "profit": null,
+   "settledAt": null
+  }
+ ]
+}
