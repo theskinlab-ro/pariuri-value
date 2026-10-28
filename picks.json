@@ -1,0 +1,33 @@
+{
+ "date": "2026-10-28",
+ "picks": [
+  {
+   "match": "Genoa – Juventus",
+   "selection": "peste 21.5 faulturi",
+   "myOdds": 1.49,
+   "sbOdds": 1.75,
+   "ev": 0.1747,
+   "verdict": "JOCI",
+   "eid": 14276250,
+   "lg": "I1",
+   "home": "Genoa",
+   "away": "Juventus",
+   "stat_key": "faulturi",
+   "line": 21.5
+  },
+  {
+   "match": "Dundee – Kilmarnock",
+   "selection": "peste 8.5 cornere",
+   "myOdds": 1.32,
+   "sbOdds": 1.4,
+   "ev": 0.0583,
+   "verdict": "miză mică",
+   "eid": 15436082,
+   "lg": "SC0",
+   "home": "Dundee",
+   "away": "Kilmarnock",
+   "stat_key": "cornere",
+   "line": 8.5
+  }
+ ]
+}
