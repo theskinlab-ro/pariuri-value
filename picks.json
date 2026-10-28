@@ -107,16 +107,16 @@
    "line": 2.5
   },
   {
-   "match": "Dundee – Kilmarnock",
+   "match": "Dundee United – Kilmarnock",
    "selection": "peste 8.5 cornere",
-   "myOdds": 1.32,
+   "myOdds": 1.19,
    "sbOdds": 1.4,
-   "ev": 0.0583,
+   "ev": 0.1762,
    "verdict": "JOCI",
-   "p": 0.756,
+   "p": 0.84,
    "eid": 15436082,
    "lg": "SC0",
-   "home": "Dundee",
+   "home": "Dundee United",
    "away": "Kilmarnock",
    "stat_key": "cornere",
    "line": 8.5
