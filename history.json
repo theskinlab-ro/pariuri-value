@@ -79,11 +79,12 @@
    "odds": 1.78,
    "verdict": "JOCI",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null,
-   "rol": "principal"
+   "status": "LOST",
+   "total": 16.0,
+   "profit": -10,
+   "settledAt": "2026-10-28",
+   "rol": "principal",
+   "src": "espn"
   },
   {
    "date": "2026-10-27",
@@ -96,11 +97,12 @@
    "odds": 2.22,
    "verdict": "JOCI",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null,
-   "rol": "principal"
+   "status": "LOST",
+   "total": 2.0,
+   "profit": -10,
+   "settledAt": "2026-10-28",
+   "rol": "principal",
+   "src": "espn"
   },
   {
    "date": "2026-10-27",
@@ -113,11 +115,12 @@
    "odds": 1.52,
    "verdict": "miză mică",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null,
-   "rol": "principal"
+   "status": "WON",
+   "total": 11.0,
+   "profit": 5.2,
+   "settledAt": "2026-10-28",
+   "rol": "principal",
+   "src": "espn"
   },
   {
    "date": "2026-10-27",
@@ -130,11 +133,12 @@
    "odds": 1.32,
    "verdict": "miză mică",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null,
-   "rol": "principal"
+   "status": "WON",
+   "total": 12.0,
+   "profit": 3.2,
+   "settledAt": "2026-10-28",
+   "rol": "principal",
+   "src": "espn"
   },
   {
    "date": "2026-10-27",
@@ -147,11 +151,12 @@
    "odds": 4.75,
    "verdict": "JOCI",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null,
-   "rol": "principal"
+   "status": "LOST",
+   "total": 9.0,
+   "profit": -10,
+   "settledAt": "2026-10-28",
+   "rol": "principal",
+   "src": "espn"
   },
   {
    "date": "2026-10-27",
@@ -164,11 +169,12 @@
    "odds": 2.12,
    "verdict": "JOCI",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null,
-   "rol": "principal"
+   "status": "WON",
+   "total": 5.0,
+   "profit": 11.2,
+   "settledAt": "2026-10-28",
+   "rol": "principal",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
