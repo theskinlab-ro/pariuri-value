@@ -206,11 +206,12 @@
    "verdict": "JOCI",
    "p": 0.702,
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null,
-   "rol": "principal"
+   "status": "LOST",
+   "total": 2.0,
+   "profit": -10,
+   "settledAt": "2026-10-28",
+   "rol": "principal",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -242,11 +243,12 @@
    "verdict": "JOCI",
    "p": 0.661,
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null,
-   "rol": "principal"
+   "status": "WON",
+   "total": 3.0,
+   "profit": 3.6,
+   "settledAt": "2026-10-28",
+   "rol": "principal",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -423,10 +425,11 @@
    "p": 0.601,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 9.0,
+   "profit": 4.0,
+   "settledAt": "2026-10-28",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -441,10 +444,11 @@
    "p": 0.594,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 26.0,
+   "profit": 6.8,
+   "settledAt": "2026-10-28",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -639,10 +643,11 @@
    "p": 0.7,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 5.0,
+   "profit": -10,
+   "settledAt": "2026-10-28",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -657,10 +662,11 @@
    "p": 0.572,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 5.0,
+   "profit": -10,
+   "settledAt": "2026-10-28",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -675,10 +681,11 @@
    "p": 0.694,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 13.0,
+   "profit": 4.0,
+   "settledAt": "2026-10-28",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -693,10 +700,11 @@
    "p": 0.623,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 1.0,
+   "profit": -10,
+   "settledAt": "2026-10-28",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -711,10 +719,11 @@
    "p": 0.565,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 13.0,
+   "profit": 6.5,
+   "settledAt": "2026-10-28",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -729,10 +738,11 @@
    "p": 0.656,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 8.0,
+   "profit": -10,
+   "settledAt": "2026-10-28",
+   "src": "espn"
   },
   {
    "date": "2026-10-28",
@@ -747,10 +757,11 @@
    "p": 0.601,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 2.0,
+   "profit": -10,
+   "settledAt": "2026-10-28",
+   "src": "espn"
   }
  ]
 }
