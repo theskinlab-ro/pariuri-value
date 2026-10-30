@@ -648,6 +648,42 @@
    "total": null,
    "profit": null,
    "settledAt": null
+  },
+  {
+   "date": "2026-10-30",
+   "eid": 14335541,
+   "lg": "F1",
+   "home": "Lille",
+   "away": "Lens",
+   "stat_key": "cornere",
+   "line": 7.5,
+   "odds": 1.38,
+   "verdict": "JOCI",
+   "p": 0.726,
+   "rol": "principal",
+   "stake": 10,
+   "status": "PENDING",
+   "total": null,
+   "profit": null,
+   "settledAt": null
+  },
+  {
+   "date": "2026-10-30",
+   "eid": 15467193,
+   "lg": "SC1",
+   "home": "Stenhousemuir",
+   "away": "Livingston",
+   "stat_key": "cornere",
+   "line": 8.5,
+   "odds": 1.46,
+   "verdict": "JOCI",
+   "p": 0.722,
+   "rol": "principal",
+   "stake": 10,
+   "status": "PENDING",
+   "total": null,
+   "profit": null,
+   "settledAt": null
   }
  ]
 }
