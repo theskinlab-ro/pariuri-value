@@ -13,10 +13,11 @@
    "p": 0.725,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 10.0,
+   "profit": 4.3,
+   "settledAt": "2026-10-30",
+   "src": "football-data"
   },
   {
    "date": "2026-10-30",
