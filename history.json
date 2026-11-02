@@ -684,6 +684,24 @@
    "total": null,
    "profit": null,
    "settledAt": null
+  },
+  {
+   "date": "2026-11-02",
+   "eid": 15439013,
+   "lg": "G1",
+   "home": "Atromitos",
+   "away": "Volos NFC",
+   "stat_key": "cornere",
+   "line": 6.5,
+   "odds": 1.36,
+   "verdict": "JOCI",
+   "p": 0.714,
+   "rol": "principal",
+   "stake": 10,
+   "status": "PENDING",
+   "total": null,
+   "profit": null,
+   "settledAt": null
   }
  ]
 }
