@@ -32,10 +32,11 @@
    "p": 0.72,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 8.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-30",
@@ -68,10 +69,11 @@
    "p": 0.717,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 7.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-30",
@@ -86,10 +88,11 @@
    "p": 0.716,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 7.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-30",
@@ -104,10 +107,11 @@
    "p": 0.713,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 9.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-30",
@@ -122,10 +126,11 @@
    "p": 0.706,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 10.0,
+   "profit": 4.4,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -194,10 +199,11 @@
    "p": 0.76,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 13.0,
+   "profit": 4.0,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -212,10 +218,11 @@
    "p": 0.754,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 15.0,
+   "profit": 3.7,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -230,10 +237,11 @@
    "p": 0.747,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 8.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -248,10 +256,11 @@
    "p": 0.745,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 11.0,
+   "profit": 4.7,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -266,10 +275,11 @@
    "p": 0.745,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 8.0,
+   "profit": 3.5,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -284,10 +294,11 @@
    "p": 0.744,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 9.0,
+   "profit": 3.9,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -302,10 +313,11 @@
    "p": 0.738,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 7.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -338,10 +350,11 @@
    "p": 0.735,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 9.0,
+   "profit": 4.3,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -356,10 +369,11 @@
    "p": 0.734,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 7.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -374,10 +388,11 @@
    "p": 0.732,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 15.0,
+   "profit": 3.9,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-31",
@@ -410,10 +425,11 @@
    "p": 0.719,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 9.0,
+   "profit": 3.5,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-11-01",
@@ -464,10 +480,11 @@
    "p": 0.749,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 8.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-11-01",
@@ -536,10 +553,11 @@
    "p": 0.706,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 8.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-11-01",
@@ -662,10 +680,11 @@
    "p": 0.726,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 12.0,
+   "profit": 3.8,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-10-30",
@@ -680,10 +699,11 @@
    "p": 0.722,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 0.0,
+   "profit": -10,
+   "settledAt": "2026-11-02",
+   "src": "espn"
   },
   {
    "date": "2026-11-02",
