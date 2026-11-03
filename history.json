@@ -51,10 +51,11 @@
    "p": 0.719,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 11.0,
+   "profit": 3.8,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-10-30",
@@ -145,10 +146,11 @@
    "p": 0.818,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 8.0,
+   "profit": 3.5,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-10-31",
@@ -163,10 +165,11 @@
    "p": 0.716,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 8.0,
+   "profit": -10,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-10-31",
@@ -181,10 +184,11 @@
    "p": 0.79,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 7.0,
+   "profit": -10,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-10-31",
@@ -332,10 +336,11 @@
    "p": 0.736,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 12.0,
+   "profit": 3.9,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-10-31",
@@ -407,10 +412,11 @@
    "p": 0.73,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 6.0,
+   "profit": -10,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-10-31",
@@ -444,10 +450,11 @@
    "p": 0.797,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 5.0,
+   "profit": -10,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-11-01",
@@ -462,10 +469,11 @@
    "p": 0.751,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 10.0,
+   "profit": 4.0,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-11-01",
@@ -499,10 +507,11 @@
    "p": 0.724,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 7.0,
+   "profit": -10,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-11-01",
@@ -517,10 +526,11 @@
    "p": 0.724,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 2.0,
+   "profit": -10,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-11-01",
@@ -535,10 +545,11 @@
    "p": 0.711,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 9.0,
+   "profit": -10,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-11-01",
@@ -572,10 +583,11 @@
    "p": 0.703,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 17.0,
+   "profit": 4.0,
+   "settledAt": "2026-11-03",
+   "src": "football-data"
   },
   {
    "date": "2026-11-02",
@@ -590,10 +602,11 @@
    "p": 0.774,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 9.0,
+   "profit": 3.7,
+   "settledAt": "2026-11-03",
+   "src": "espn"
   },
   {
    "date": "2026-11-02",
@@ -608,10 +621,11 @@
    "p": 0.763,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 13.0,
+   "profit": 3.9,
+   "settledAt": "2026-11-03",
+   "src": "espn"
   },
   {
    "date": "2026-11-02",
@@ -626,10 +640,11 @@
    "p": 0.731,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 13.0,
+   "profit": 5.3,
+   "settledAt": "2026-11-03",
+   "src": "espn"
   },
   {
    "date": "2026-11-02",
@@ -644,10 +659,11 @@
    "p": 0.714,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 4.0,
+   "profit": -10,
+   "settledAt": "2026-11-03",
+   "src": "espn"
   },
   {
    "date": "2026-11-02",
@@ -662,10 +678,11 @@
    "p": 0.704,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "WON",
+   "total": 10.0,
+   "profit": 4.1,
+   "settledAt": "2026-11-03",
+   "src": "espn"
   },
   {
    "date": "2026-10-30",
@@ -718,10 +735,11 @@
    "p": 0.714,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 3.0,
+   "profit": -10,
+   "settledAt": "2026-11-03",
+   "src": "espn"
   },
   {
    "date": "2026-11-03",
