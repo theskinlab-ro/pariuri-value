@@ -1470,10 +1470,11 @@
    "p": 0.742,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 6.0,
+   "profit": -10,
+   "settledAt": "2026-11-21",
+   "src": "espn"
   },
   {
    "date": "2026-11-20",
@@ -1560,10 +1561,11 @@
    "p": 0.72,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 7.0,
+   "profit": -10,
+   "settledAt": "2026-11-21",
+   "src": "espn"
   },
   {
    "date": "2026-11-20",
