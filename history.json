@@ -944,10 +944,11 @@
    "p": 0.836,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 0.0,
+   "profit": -10,
+   "settledAt": "2026-11-21",
+   "src": "fotmob"
   },
   {
    "date": "2026-11-14",
@@ -962,10 +963,11 @@
    "p": 0.81,
    "rol": "varianta",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 0.0,
+   "profit": -10,
+   "settledAt": "2026-11-21",
+   "src": "fotmob"
   },
   {
    "date": "2026-11-14",
@@ -1037,10 +1039,11 @@
    "p": 0.784,
    "rol": "principal",
    "stake": 10,
-   "status": "PENDING",
-   "total": null,
-   "profit": null,
-   "settledAt": null
+   "status": "LOST",
+   "total": 0.0,
+   "profit": -10,
+   "settledAt": "2026-11-21",
+   "src": "fotmob"
   },
   {
    "date": "2026-11-14",
